@@ -1,0 +1,377 @@
+html,
+body {
+	background-color: #ffffff;
+	color: #4a4a4a;
+	width: 100%;
+	overflow-x: hidden;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+a {
+	color: #4a90e2;
+	text-decoration: none;
+	font-family: 'Varela', Arial, Helvetica, sans-serif;
+}
+
+/*Desktop Viewport Styles*/
+.Mobile {
+	display: none;
+}
+
+/*Base Font Styles*/
+h1,
+h2,
+h3 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin: 32px 0px;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: 'Varela', Arial, Helvetica, sans-serif;
+}
+
+.Bold {
+	font-weight: bold;
+}
+
+/*General Container Styles*/
+.Container,
+.Hero,
+.Item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Max {
+	max-width: 1400px;
+	width: 100%;
+	display: flex;
+}
+
+.White {
+	background-color: #f3f5f5;
+}
+
+.Light {
+	background-color: #eaebec;
+}
+
+.Medium {
+	background-color: #d8d8d8;
+}
+
+.Gray {
+	background-color: #4a4a4a;
+}
+
+/*Header Styles*/
+.NavBar {
+	height: 64px;
+	padding: 0 24px;
+}
+
+.NavBar .Desktop,
+.Logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.Logo {
+	width: auto;
+	height: 32px;
+	text-transform: uppercase;
+	color: #9b9b9b;
+}
+
+.Logo .Bold {
+	color: #4a4a4a;
+}
+
+.Menu a {
+	color: #4a4a4a;
+	margin-right: 16px;
+	transition-duration: 0.3s;
+}
+
+.Menu a:last-of-type {
+	margin-right: 0;
+}
+
+.Menu a:hover{
+	color: #4a90e2;
+	transition-duration: 0.3s;
+}
+
+/*Hero Styles*/
+.Hero .Max,
+.Main .Max,
+.Thesis .Max /*Reusing style for other section*/ {
+	margin: 32px 24px;
+}
+
+.Hero .Max {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.Hero img,
+.MainFeature /*Reusing style for other section*/ {
+	width: 60%;
+	margin-right: 24px;
+}
+
+.Hero .Copy,
+.SecondaryFeature /*Reusing style for other section*/ {
+	width: calc(40% - 24px);
+}
+
+.Hero p {
+	font-size: 1.25rem;
+	margin: 30px 0;
+}
+
+a.button {
+	width: 100%;
+	padding: 15px 0;
+	color: #ffffff;
+	display: block;
+	text-align: center;
+	transition-duration: 0.3s;
+}
+
+a.Gray:Hover {
+	background-color: #4a90e2;
+	transition-duration: 0.3s;
+}
+
+/*Content Section Styles*/
+.Main .Max,
+.Thesis .Max{
+	margin: 0px 24px;
+}
+
+.MainFeature {
+	margin: 32px 24px 32px 0px;
+}
+
+.MainFeature img,
+.MainFeature video {
+	width: 100%;
+}
+
+.Tagline {
+	display: block;
+	margin-top: 32px;
+}
+
+.SecondaryFeature {
+	border-left: 1px solid #d8d8d8;
+	padding-top: 16px;
+}
+
+.Main .Item {
+	border-top: 1px solid #d8d8d8;
+}
+
+.Main .Item:first-of-type {
+	border-top: 0px;
+}
+
+
+.Item {
+	justify-content: flex-start;
+	transition-duration: 0.3s;
+}
+
+.Item:hover {
+	background-color: #d8d8d8;
+	transition-duration: 0.3s;
+}
+
+.Item img {
+	width: 35%;
+	margin: 18px 16px;
+}
+
+.Item span {
+	margin: 8px 0;
+	display: block;
+}
+
+.Learning {
+	padding: 0 72px;
+}
+
+.Learning .Max,
+.Thesis .Max{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.Learning h2,
+.Thesis h2 {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.Card {
+	display: inline-flex;
+    flex-direction: column;
+    width: calc(33% - 32px);
+    margin-bottom: 32px;
+    background-color: #ffffff;
+	padding-bottom: 24px;
+}
+
+.Card:nth-last-of-type(2),
+.Card:nth-last-of-type(5) {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.Card img {
+	width: 100%;
+}
+
+.Card h3 {
+	margin: 16px;
+}
+
+.Card span {
+	margin: 8px 16px;
+}
+
+.Thesis .SecondaryFeature {
+	border-left: 0px;
+}
+
+.Thesis h3 {
+	margin: 24px 0;
+}
+
+/*Footer Styles*/
+.Footer {
+	justify-content: space-between;
+	padding: 16px 24px;
+	font-size: 0.75rem;
+	border-top: 1px solid #d8d8d8;
+}
+
+.Footer a {
+	color: #4a4a4a;
+}
+
+.Footer a:first-of-type {
+	margin-right: 10px;
+}
+
+/*Media Break: Tablet*/
+@media only screen and (max-width : 480px){
+	.White,
+	.Light {
+		background: none;
+	}
+	
+	.Desktop,
+	.NavBar .Desktop,
+	.Logo,
+	.Footer .Links{
+		display: none;
+	}
+	
+	.Mobile {
+		display: flex;
+	}
+	
+	/*Mobile Header*/
+	.NavBar .Mobile {
+		width: 100%;
+		justify-content: space-between;
+	}
+	
+	/*Mobile Hero*/
+	.Hero .Max,
+	.Main .Max,
+	.Thesis .Max {
+		flex-direction: column;
+		margin: 0;
+	}
+	
+	.Hero img,
+	.Hero .Copy,
+	.SecondaryFeature {
+		width: auto;
+		max-width: 100%;
+	}
+	
+	.Hero .Copy {
+		padding: 32px 16px;
+	}
+	
+	/*Mobile Content*/
+	.SecondaryFeature {
+		padding-top: 0px;
+		border: 0;
+	}
+	
+	.Main .Item {
+		flex-direction: column;
+		border: 0px;
+		padding: 16px 16px 32px;
+	}
+	
+	.Item img {
+		padding: 0;
+		width: 100%;
+	}
+	
+	.Item .Copy {
+		width: 100%;
+		padding: 0 16px;
+	}
+	
+	.Learning {
+		padding: 0 16px;
+	}
+	
+	.Card {
+		width: 100%;
+		padding: 16px 16px 24px;
+		margin-bottom: 8px;
+		background-color: #d8d8d8;
+	}
+	
+	.Card:nth-last-of-type(2),
+    .Card:nth-last-of-type(5) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.Card:last-of-type {
+		margin-bottom: 0px;
+	}
+	
+	.MainFeature {
+		width: 100%;
+		margin: 0 0 24px;
+	}
+}
