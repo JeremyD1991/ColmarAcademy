@@ -4,14 +4,39 @@ body {
 	color: #4a4a4a;
 	width: 100%;
 	overflow-x: hidden;
-	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-family: 'Avenir-Book', Arial, Helvetica, sans-serif;
 	font-size: 16px;
+}
+
+@font-face {
+	font-family: Avenir-Light;
+	src: url("../fonts/AvenirLTStd-Light.otf");
+}
+
+@font-face {
+	font-family: Avenir-Book;
+	src: url("../fonts/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+	font-family: Gotham-Thin;
+	src: url("../fonts/Gotham-Thin.otf");
+}
+
+@font-face {
+	font-family: Gotham-Book;
+	src: url("../fonts/Gotham-Book.otf");
+}
+
+@font-face {
+	font-family: Gotham-Medium;
+	src: url("../fonts/Gotham-Medium.otf");
 }
 
 a {
 	color: #4a90e2;
 	text-decoration: none;
-	font-family: 'Varela', Arial, Helvetica, sans-serif;
+	font-family: 'Avenir-Book', Arial, Helvetica, sans-serif;
 }
 
 /*Desktop Viewport Styles*/
@@ -23,7 +48,7 @@ a {
 h1,
 h2,
 h3 {
-	font-weight: bold;
+	font-family: 'Gotham-Medium', Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -40,7 +65,7 @@ h3 {
 }
 
 p {
-	font-family: 'Varela', Arial, Helvetica, sans-serif;
+	font-family: 'Avenir-Book', Arial, Helvetica, sans-serif;
 }
 
 .Bold {
@@ -98,10 +123,13 @@ p {
 	height: 32px;
 	text-transform: uppercase;
 	color: #9b9b9b;
+	font-family: 'Gotham-Book', Arial, Helvetica, sans-serif;
 }
 
 .Logo .Bold {
 	color: #4a4a4a;
+	font-family: 'Gotham-Medium', Arial, Helvetica, sans-serif;
+	font-weight: normal;
 }
 
 .Menu a {
@@ -180,6 +208,7 @@ a.Gray:Hover {
 .Tagline {
 	display: block;
 	margin-top: 32px;
+	font-family: 'Avenir-Light', Arial, Helvetica, sans-serif;
 }
 
 .SecondaryFeature {
