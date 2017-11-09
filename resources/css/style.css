@@ -298,12 +298,12 @@ a.Gray:Hover {
 	letter-spacing: 1.1px;
 }
 
-.Thesis .SecondaryFeature {
-	border-left: 0px;
+.Thesis .MainFeature {
+	margin-top: 0px;
 }
 
-.Thesis h2 /*Override inherited margin setting*/ {
-	margin-bottom: 0px;
+.Thesis .SecondaryFeature {
+	border-left: 0px;
 }
 
 .Thesis h3 {
@@ -343,11 +343,11 @@ a.Gray:Hover {
 		font-size: 0.9rem;
 	}
 	
+	/*Tablet Hero and Header*/
 	.Menu a:nth-of-type(3) {
 		display: none;
 	}
 	
-	/*Tablet Hero*/
 	.Hero .Max,
 	.Main .Max,
 	.Thesis .Max {
@@ -385,12 +385,8 @@ a.Gray:Hover {
 	}
 	
 	/*Tablet Content*/
-	.Thesis {
-		display: inline-flex; /*Fixes overflow element at certain sizes*/
-	}
-	
 	.Thesis .SecondaryFeature {
-		display: inline-flex;
+		display: inline-flex; /*Fixes overflow element at certain sizes*/
 		flex-direction: column;
 	}
 }
@@ -434,6 +430,11 @@ a.Gray:Hover {
 	.Item img {
 		padding: 0;
 		width: 100%;
+		margin: 0;
+	}
+	
+	.Ratio {
+		padding: 18px 0px; /*Maintain image ratio for mobile*/
 	}
 	
 	.Item .Copy {
@@ -449,7 +450,7 @@ a.Gray:Hover {
 	
 	.Card {
 		width: 100%;
-		padding: 16px 16px 24px;
+		padding: 16px 16px;
 		margin-bottom: 8px;
 		background-color: #d8d8d8;
 	}
