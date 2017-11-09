@@ -312,10 +312,13 @@ a.Gray:Hover {
 
 /*Footer Styles*/
 .Footer {
-	justify-content: space-between;
 	padding: 16px 24px;
 	font-size: 0.75rem;
 	border-top: 1px solid #d8d8d8;
+}
+
+.Footer .Max {
+	justify-content: space-between;
 }
 
 /*Media Break: Tablet*/
