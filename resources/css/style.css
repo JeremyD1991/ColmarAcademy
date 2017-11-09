@@ -8,6 +8,8 @@ body {
 	font-size: 16px;
 }
 
+/*Custom Fonts*/
+
 @font-face {
 	font-family: Avenir-Light;
 	src: url("../fonts/AvenirLTStd-Light.otf");
@@ -64,8 +66,10 @@ h3 {
 	font-size: 1.5rem;
 }
 
-p {
-	font-family: 'Avenir-Book', Arial, Helvetica, sans-serif;
+p,
+.Copy span,
+.Card span {
+	line-height: 1.2;
 }
 
 .Bold {
@@ -115,7 +119,7 @@ p {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: 100%;
+	max-width: 1400px;
 }
 
 .Logo {
@@ -132,30 +136,30 @@ p {
 	font-weight: normal;
 }
 
-.Menu a {
+.Menu a,
+.Footer a {
 	color: #4a4a4a;
 	margin-right: 16px;
 	transition-duration: 0.3s;
 }
 
-.Menu a:last-of-type {
+.Menu a:last-of-type,
+.Footer a:last-of-type {
 	margin-right: 0;
 }
 
-.Menu a:hover{
+.Menu a:hover,
+.Footer a:hover {
 	color: #4a90e2;
 	transition-duration: 0.3s;
 }
 
 /*Hero Styles*/
-.Hero .Max,
-.Main .Max,
-.Thesis .Max /*Reusing style for other section*/ {
+.Hero .Max {
 	margin: 32px 24px;
 }
 
 .Hero .Max {
-	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
@@ -167,7 +171,7 @@ p {
 }
 
 .Hero .Copy,
-.SecondaryFeature /*Reusing style for other section*/ {
+.SecondaryFeature {
 	width: calc(40% - 24px);
 }
 
@@ -250,14 +254,13 @@ a.Gray:Hover {
 }
 
 .Learning .Max,
-.Thesis .Max{
+.Thesis .Max {
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .Learning h2,
 .Thesis h2 {
-	display: block;
 	text-align: center;
 	width: 100%;
 }
@@ -293,6 +296,10 @@ a.Gray:Hover {
 	border-left: 0px;
 }
 
+.Thesis h2 /*Override inherited margin setting*/ {
+	margin-bottom: 0px;
+}
+
 .Thesis h3 {
 	margin: 24px 0;
 }
@@ -305,16 +312,80 @@ a.Gray:Hover {
 	border-top: 1px solid #d8d8d8;
 }
 
-.Footer a {
-	color: #4a4a4a;
-}
-
-.Footer a:first-of-type {
-	margin-right: 10px;
-}
-
 /*Media Break: Tablet*/
-@media only screen and (max-width : 480px){
+@media only screen and (max-width : 850px) {
+	/*Font Sizes*/
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+	}
+	
+	.Hero p {
+		font-size: 1.2rem;
+	}
+	
+	.Card span,
+	.Copy span,
+	p {
+		font-size: 0.9rem;
+	}
+	
+	.Menu a:nth-of-type(3) {
+		display: none;
+	}
+	
+	/*Tablet Hero*/
+	.Hero .Max,
+	.Main .Max,
+	.Thesis .Max {
+		flex-direction: column;
+		margin: 0;
+	}
+	
+	.Hero img,
+	.Hero .Copy,
+	.SecondaryFeature {
+		width: auto;
+		max-width: 100%;
+	}
+	
+	.Hero img {
+		margin: 0;
+	}
+	
+	.Hero .Copy {
+		padding: 32px 16px;
+	}
+	
+	.MainFeature {
+		width: auto;
+		padding: 0 16px;
+		margin: 32px 0px;
+	}
+	
+	.Item img {
+		max-width: 200px;
+	}
+	
+	.Learning {
+		padding: 0 16px;
+	}
+	
+	/*Tablet Content*/
+	.Thesis {
+		display: inline-flex; /*Fixes overflow element at certain sizes*/
+	}
+}
+
+/*Media Break: Mobile*/
+@media only screen and (max-width : 480px) {
 	.White,
 	.Light {
 		background: none;
@@ -335,25 +406,6 @@ a.Gray:Hover {
 	.NavBar .Mobile {
 		width: 100%;
 		justify-content: space-between;
-	}
-	
-	/*Mobile Hero*/
-	.Hero .Max,
-	.Main .Max,
-	.Thesis .Max {
-		flex-direction: column;
-		margin: 0;
-	}
-	
-	.Hero img,
-	.Hero .Copy,
-	.SecondaryFeature {
-		width: auto;
-		max-width: 100%;
-	}
-	
-	.Hero .Copy {
-		padding: 32px 16px;
 	}
 	
 	/*Mobile Content*/
