@@ -415,6 +415,10 @@ a.Gray:Hover {
 		justify-content: space-between;
 	}
 	
+	a.Gray {
+		background-color: #9b9b9b;
+	}
+	
 	/*Mobile Content*/
 	.SecondaryFeature {
 		padding-top: 0px;
