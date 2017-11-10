@@ -10,29 +10,29 @@
 	</head>
 	<body>
 	<!--Header & Menu-->
-		<div class="NavBar Container">
+		<header class="Container">
 			<div class="Desktop">
 				<div class="Logo">
 					<img alt="Colmar Academy Logo" src="resources/images/ic-logo.svg">
 					<span class="Bold">Colmar</span><span>Academy</span>
 				</div>
-				<div class="Menu">
+				<nav role="presentation">
 					<a href="#">On campus</a>
 					<a href="#">Online</a>
 					<a href="#">or companies</a>
 					<a href="#">Sign in</a>
-				</div>
+				</nav>
 			</div>
-			<div class="Mobile">
+			<nav class="Mobile" role="presentation">
 				<a href="#"><img alt="Colmar Academy Logo" src="resources/images/ic-logo.svg"></a>
 				<a href="#"><img alt="On Campus" src="resources/images/ic-on-campus.svg"></a>
 				<a href="#"><img alt="Online" src="resources/images/ic-online.svg"></a>
 				<a href="#"><img alt="Sign In" src="resources/images/ic-login.svg"></a>
-			</div>
-		</div>
+			</nav>
+		</header>
 		<div class="Hero Medium">
 			<div class="Max">
-				<img alt="Learn Something New" src="resources/images/banner.jpg">
+				<img alt="Students reading" src="resources/images/banner.jpg">
 				<div class="Copy">
 					<h1>Learn something new everyday</h1>
 					<p class="Bold">Lorem ipsum dolor sit amet, conscectetur adipsicing elit.</p>
@@ -51,9 +51,9 @@
 				</div>
 				<div class="SecondaryFeature">
 					<div class="Item">
-						<img class="Desktop" alt="Orientation" src="resources/images/information-orientation.jpg">
+						<img class="Desktop" alt="Students walking" src="resources/images/information-orientation.jpg">
 						<div class="Ratio">
-							<img class="Mobile" alt="Orientation" src="resources/images/information-orientation-mobile.jpg">
+							<img class="Mobile" alt="Students walking" src="resources/images/information-orientation-mobile.jpg">
 						</div>
 						<div class="Copy">
 							<h3>Orientation date</h3>
@@ -62,9 +62,9 @@
 						</div>
 					</div>
 					<div class="Item">
-						<img class="Desktop" alt="Campus" src="resources/images/information-campus.jpg">
+						<img class="Desktop" alt="Room with map" src="resources/images/information-campus.jpg">
 						<div class="Ratio">
-							<img class="Mobile" alt="Campus" src="resources/images/information-campus-mobile.jpg">
+							<img class="Mobile" alt="Room with map" src="resources/images/information-campus-mobile.jpg">
 						</div>
 						<div class="Copy">
 							<h3>Our campus</h3>
@@ -73,9 +73,9 @@
 						</div>
 					</div>
 					<div class="Item">
-						<img class="Desktop" alt="Guest" src="resources/images/information-guest-lecture.jpg">
+						<img class="Desktop" alt="Oliver Sack" src="resources/images/information-guest-lecture.jpg">
 						<div class="Ratio">
-							<img class="Mobile" alt="Guest" src="resources/images/information-guest-lecture-mobile.jpg">
+							<img class="Mobile" alt="Oliver Sack" src="resources/images/information-guest-lecture-mobile.jpg">
 						</div>
 						<div class="Copy">
 							<h3>Our guest lecture</h3>
@@ -91,37 +91,37 @@
 			<div class="Max">
 				<h2>Start learning</h2>
 				<div class="Card">
-					<img class="Desktop" alt="Software" src="resources/images/course-software.jpg">
+					<img class="Desktop" alt="Desk with computer monitors" src="resources/images/course-software.jpg">
 					<h3>Software engineering</h3>
 					<span class="Desktop">COURSES</span>
 					<span class="Desktop">Web Development, Mobile Development, iOT, APIs</span>
 				</div>
 				<div class="Card">
-					<img class="Desktop" alt="Computer" src="resources/images/course-computer-art.jpg">
+					<img class="Desktop" alt="A smartphone" src="resources/images/course-computer-art.jpg">
 					<h3>Computer Art</h3>
 					<span class="Desktop">COURSES</span>
 					<span class="Desktop">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
 				</div>
 				<div class="Card">
-					<img class="Desktop" alt="Design" src="resources/images/course-design.jpg">
+					<img class="Desktop" alt="A student with a camera" src="resources/images/course-design.jpg">
 					<h3>Design</h3>
 					<span class="Desktop">COURSES</span>
 					<span class="Desktop">User Experience Design, User Research, Visual Design</span>
 				</div>
 				<div class="Card">
-					<img class="Desktop" alt="Data" src="resources/images/course-data.jpg">
+					<img class="Desktop" alt="A laptop" src="resources/images/course-data.jpg">
 					<h3>Data</h3>
 					<span class="Desktop">COURSES</span>
 					<span class="Desktop">Data Science, Big Data, SQL, Data Visualization</span>
 				</div>
 				<div class="Card">
-					<img class="Desktop" alt="Business" src="resources/images/course-business.jpg">
+					<img class="Desktop" alt="A chessboard" src="resources/images/course-business.jpg">
 					<h3>Business</h3>
 					<span class="Desktop">COURSES</span>
 					<span class="Desktop">Product Development, Business Development, Startup</span>
 				</div>
 				<div class="Card">
-					<img class="Desktop" alt="Marketing" src="resources/images/course-marketing.jpg">
+					<img class="Desktop" alt="A wristwatch" src="resources/images/course-marketing.jpg">
 					<h3>Marketing</h3>
 					<span class="Desktop">COURSES</span>
 					<span class="Desktop">Analytics, Content Marketing, Mobile Marketing</span>
@@ -133,7 +133,7 @@
 			<div class="Max">
 				<h2>Thesis Exhibit</h2>
 				<div class="MainFeature">
-					<video controls="">
+					<video controls="" aria-label="Urban thesis video">
 						<source src="resources/videos/thesis.mp4">
 					</video>
 					<h3 class="Desktop">Reimagine urban</h3>
@@ -141,14 +141,14 @@
 				</div>
 				<div class="SecondaryFeature Desktop">
 					<div class="Item">
-						<img class="Desktop" alt="Fisma" src="resources/images/thesis-fisma.jpg">
+						<img class="Desktop" alt="Student working" src="resources/images/thesis-fisma.jpg">
 						<div class="Copy">
 							<h3>Fisma: Design and Prototype</h3>
 							<span>Designer showcase of new prototype product</span>
 						</div>
 					</div>
 					<div class="Item">
-						<img class="Desktop" alt="Now and then" src="resources/images/thesis-now-and-then.jpg">
+						<img class="Desktop" alt="Empire State Building" src="resources/images/thesis-now-and-then.jpg">
 						<div class="Copy">
 							<h3>Now and then</h3>
 							<span>Research study about New York</span>
@@ -158,14 +158,14 @@
 			</div>
 		</div>
 	<!--Footer Section-->
-		<div class="Footer Container">
+		<footer class="Container">
 			<div class="Max">
 				<span class="Copyright">© 2017 Colmar Academy. All rights reserved.</span>
-				<div class="Links">
+				<nav class="Links" role="presentation">
 					<a href="#">Terms</a>
 					<a href="#">Privacy</a>
-				</div>
+				</nav>
 			</div>
-		</div>
+		</footer>
 	</body>
 </html>

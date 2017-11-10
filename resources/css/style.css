@@ -108,12 +108,12 @@ p,
 }
 
 /*Header Styles*/
-.NavBar {
+header {
 	height: 64px;
 	padding: 0 24px;
 }
 
-.NavBar .Desktop,
+header .Desktop,
 .Logo {
 	display: flex;
 	justify-content: space-between;
@@ -136,20 +136,17 @@ p,
 	font-weight: normal;
 }
 
-.Menu a,
-.Footer a {
+nav a {
 	color: #4a4a4a;
 	margin-right: 16px;
 	transition-duration: 0.3s;
 }
 
-.Menu a:last-of-type,
-.Footer a:last-of-type {
+nav a:last-of-type {
 	margin-right: 0;
 }
 
-.Menu a:hover,
-.Footer a:hover {
+nav a:hover {
 	color: #4a90e2;
 	transition-duration: 0.3s;
 }
@@ -312,13 +309,13 @@ a.Gray:Hover {
 }
 
 /*Footer Styles*/
-.Footer {
+footer {
 	padding: 16px 24px;
 	font-size: 0.75rem;
 	border-top: 1px solid #d8d8d8;
 }
 
-.Footer .Max {
+footer .Max {
 	justify-content: space-between;
 }
 
@@ -348,7 +345,7 @@ a.Gray:Hover {
 	}
 	
 	/*Tablet Hero and Header*/
-	.Menu a:nth-of-type(3) {
+	nav a:nth-of-type(3) {
 		display: none;
 	}
 	
@@ -403,9 +400,9 @@ a.Gray:Hover {
 	}
 	
 	.Desktop,
-	.NavBar .Desktop,
+	header .Desktop,
 	.Logo,
-	.Footer .Links{
+	footer .Links{
 		display: none;
 	}
 	
@@ -414,13 +411,17 @@ a.Gray:Hover {
 	}
 	
 	/*Mobile Header*/
-	.NavBar .Mobile {
+	header .Mobile {
 		width: 100%;
 		justify-content: space-between;
 	}
 	
 	a.Gray {
 		background-color: #9b9b9b;
+	}
+	
+	nav a:nth-of-type(3) {
+		display: block;
 	}
 	
 	/*Mobile Content*/
